@@ -7,6 +7,7 @@ def create_app():
     
     # Initialize extensions
     db.init_app(app)
+    print("Database initialized")
     cors.init_app(app)
     login_manager.init_app(app)
     
